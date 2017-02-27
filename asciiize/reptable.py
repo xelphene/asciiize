@@ -58,6 +58,62 @@ c3,b5      o   UTF-8 o-tilde
 c3,95      O   UTF-8 O-tilde
 c3,a7      c   UTF-8 c-cedilla
 c3,87      C   UTF-8 C-cedilla
+c3,80      A   UTF-8 A-GRAVE
+c3,81      A   UTF-8 A-ACUTE
+c3,82      A   UTF-8 A-CIRCUMFLEX
+c3,83      A   UTF-8 A-TILDE
+c3,84      A   UTF-8 A-DIAERESIS
+c3,85      A   UTF-8 A-RING ABOVE
+c3,87      C   UTF-8 C-CEDILLA
+c3,88      E   UTF-8 E-GRAVE
+c3,89      E   UTF-8 E-ACUTE
+c3,8a      E   UTF-8 E-CIRCUMFLEX
+c3,8b      E   UTF-8 E-DIAERESIS
+c3,8c      I   UTF-8 I-GRAVE
+c3,8d      I   UTF-8 I-ACUTE
+c3,8e      I   UTF-8 I-CIRCUMFLEX
+c3,8f      I   UTF-8 I-DIAERESIS
+c3,90      D   UTF-8 ETH
+c3,91      N   UTF-8 N-TILDE
+c3,92      O   UTF-8 O-GRAVE
+c3,93      O   UTF-8 O-ACUTE
+c3,94      O   UTF-8 O-CIRCUMFLEX
+c3,95      O   UTF-8 O-TILDE
+c3,96      O   UTF-8 O-DIAERESIS
+c3,98      O   UTF-8 O-STROKE
+c3,99      U   UTF-8 U-GRAVE
+c3,9a      U   UTF-8 U-ACUTE
+c3,9b      U   UTF-8 U-CIRCUMFLEX
+c3,9c      U   UTF-8 U-DIAERESIS
+c3,9d      Y   UTF-8 Y-ACUTE
+c3,a0      a   UTF-8 A-GRAVE
+c3,a1      a   UTF-8 A-ACUTE
+c3,a2      a   UTF-8 A-CIRCUMFLEX
+c3,a3      a   UTF-8 A-TILDE
+c3,a4      a   UTF-8 A-DIAERESIS
+c3,a5      a   UTF-8 A-RING ABOVE
+c3,a7      c   UTF-8 C-CEDILLA
+c3,a8      e   UTF-8 E-GRAVE
+c3,a9      e   UTF-8 E-ACUTE
+c3,aa      e   UTF-8 E-CIRCUMFLEX
+c3,ab      e   UTF-8 E-DIAERESIS
+c3,ac      i   UTF-8 I-GRAVE
+c3,ad      i   UTF-8 I-ACUTE
+c3,ae      i   UTF-8 I-CIRCUMFLEX
+c3,af      i   UTF-8 I-DIAERESIS
+c3,b1      n   UTF-8 N-TILDE
+c3,b2      o   UTF-8 O-GRAVE
+c3,b3      o   UTF-8 O-ACUTE
+c3,b4      o   UTF-8 O-CIRCUMFLEX
+c3,b5      o   UTF-8 O-TILDE
+c3,b6      o   UTF-8 O-DIAERESIS
+c3,b8      o   UTF-8 O-STROKE
+c3,b9      u   UTF-8 U-GRAVE
+c3,ba      u   UTF-8 U-ACUTE
+c3,bb      u   UTF-8 U-CIRCUMFLEX
+c3,bc      u   UTF-8 U-DIAERESIS
+c3,bd      y   UTF-8 Y-ACUTE
+c3,bf      y   UTF-8 Y-DIAERESIS
 '''
 
 def parse_replacement_table(text):
