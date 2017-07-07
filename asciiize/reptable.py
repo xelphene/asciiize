@@ -1,6 +1,8 @@
 
 replacement_table_text = '''
 e2,80,93   -   UTF-8 hyphen
+e2,80,9c   "   UTF-8 curly double open quote
+e2,80,9d   "   UTF-8 curly double close quote
 91         '   CP1252 curly single quote
 92         '   CP1252 curly single quote
 93         "   CP1252 curly double quote
@@ -119,10 +121,13 @@ c3,bf      y   UTF-8 Y-DIAERESIS
 def parse_replacement_table(text):
 	replacement_table = []
 	for line in text.split('\n'):
+		if line.startswith('#'):
+			continue
 		parts = line.split(' ')
 		parts = filter( lambda p: p!='', parts ) # remove empty strings
 		if parts==[]:
 			continue
+		
 		
 		byteseq = parts[0].split(',')
 		byteseq = '\\x'.join(byteseq)
