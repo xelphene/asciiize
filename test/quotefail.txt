@@ -1,0 +1,1 @@
+"tion,"Browse to /moeller-admin/flash-navigation-ng, click a name in the “Edit” section (e.g. “photovoltaik”), scroll to the “Content of” section, click a folder icon."

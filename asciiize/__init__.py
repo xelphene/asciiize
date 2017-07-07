@@ -9,7 +9,7 @@ def sanitize_multiline(s):
 def sanitize_oneline(s):
 	return sanitize(s)
 
-def sanitize(s, passchars=[]):
+def sanitize_diag(s, passchars=[]):
 
 	'''given a string containing text of an unknown encoding (i.e. arbitrary
 	byte sequences), munge it as best as we can to plain printable ascii. 
@@ -21,6 +21,7 @@ def sanitize(s, passchars=[]):
 	repchar will be returned in their place.'''
 	
 	passchars = set(passchars)
+	rmchars = []
 
 	for (searchkey, replacement) in replacement_table:
 		s = s.replace(searchkey, replacement)
@@ -32,7 +33,20 @@ def sanitize(s, passchars=[]):
 		elif c in passchars:
 			ss += c
 		else:
-			pass
+			rmchars.append( '%.2x' % ord(c))
+			#rmchars.append(hex(ord(c))[2:])
 
+	return (ss, rmchars)
+
+def sanitize(s, passchars=[]):
+	'''given a string containing text of an unknown encoding (i.e. arbitrary
+	byte sequences), munge it as best as we can to plain printable ascii. 
+	Unknown characters will be removed.  Changes CP1252 and unicode curly
+	quotes and dashes to their nearest ascii equivalent.  Changes accented
+	characters into un-accented ones.  A string containing only printable
+	ascii characters (bytes 32-126 inclusive).  Any characters in passchars
+	which do not get substituted will be returned literally.  Otherwise,
+	repchar will be returned in their place.'''
+	(ss, rmbytes) = sanitize_diag(s, passchars)
 	return ss
-
+	
